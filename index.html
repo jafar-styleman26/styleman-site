@@ -5,55 +5,148 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>STYLE MAN | فروشگاه لباس مردانه</title>
+
 <style>
-:root{--gold:#d8b56b;--bg:#0b0b0b;--panel:#181818}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:#fff;font-family:Tahoma,Arial,sans-serif}
-a{text-decoration:none;color:inherit}
-header{background:#080808;border-bottom:1px solid #382e1d;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
-.logo{font-size:25px;font-weight:bold;color:var(--gold)}
-nav{display:flex;gap:20px;flex-wrap:wrap}
-nav a{font-size:13px}
-nav a:hover{color:var(--gold)}
-.hero{text-align:center;padding:75px 20px;background:radial-gradient(ellipse at top,#514126,#191919 55%,#090909)}
-.hero small{color:var(--gold);letter-spacing:3px}
-.hero h1{font-size:clamp(32px,5vw,52px);line-height:1.6;margin:20px 0}
-.hero p{color:#ccc;line-height:2}
-.btn{display:inline-block;border:0;border-radius:4px;background:var(--gold);color:#111;padding:12px 20px;font-family:inherit;font-weight:bold;cursor:pointer}
-.btn:hover{background:#f0d494}
-.section{padding:48px 7%}
-.heading{text-align:center;margin-bottom:28px}
-.heading h2{font-size:26px}
-.heading p{font-size:13px;color:#aaa;line-height:2}
-.search{display:block;width:100%;max-width:450px;margin:0 auto 25px;padding:13px;background:#191919;color:white;border:1px solid #514126;border-radius:5px;font-family:inherit}
-.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
-.card{background:var(--panel);border:1px solid #332b1d;border-radius:7px;overflow:hidden}
-.art{height:200px;background:linear-gradient(145deg,#383022,#191919);display:flex;align-items:center;justify-content:center;overflow:hidden}
-.art img{width:100%;height:100%;object-fit:contain;display:block}
-.emoji{font-size:65px}
-.info{padding:16px}
-.info h3{font-size:15px}
-.info p{font-size:12px;color:#bbb;line-height:1.9}
-.price{color:var(--gold)!important}
-.info .btn{width:100%;font-size:12px}
-.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.benefit{text-align:center;padding:20px 12px;background:#171717;border:1px solid #332b1d}
-.benefit h3{color:var(--gold);font-size:15px}
-.benefit p{font-size:12px;color:#bbb;line-height:1.9}
-.banner{text-align:center;padding:45px 20px;background:linear-gradient(120deg,#332819,#171717)}
-.banner h2{color:var(--gold)}
-.banner p{color:#ccc;line-height:2}
-.about,.contact{text-align:center;padding:40px 20px;line-height:2}
-.about p,.contact p{color:#bbb}
-.contact{background:#171717}
-.contact h2{color:var(--gold)}
-footer{text-align:center;background:#070707;color:#999;padding:22px 12px;font-size:12px;line-height:2}
-[hidden]{display:none!important}
-@media(max-width:800px){.products{grid-template-columns:repeat(2,minmax(0,1fr))}.benefits{grid-template-columns:1fr}}
-@media(max-width:480px){header{justify-content:center}nav{justify-content:center;gap:13px}.section{padding:35px 5%}.products{gap:10px}.art{height:150px}.info{padding:11px}.hero{padding:55px 15px}}
+:root {
+  --gold: #d8b56b;
+  --bg: #0b0b0b;
+  --panel: #181818;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: white;
+  font-family: Tahoma, Arial, sans-serif;
+}
+a { text-decoration: none; color: inherit; }
+header {
+  background: #080808;
+  border-bottom: 1px solid #382e1d;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.logo { font-size: 25px; font-weight: bold; color: var(--gold); }
+nav { display: flex; gap: 20px; flex-wrap: wrap; }
+nav a { font-size: 13px; }
+nav a:hover { color: var(--gold); }
+.hero {
+  text-align: center;
+  padding: 75px 20px;
+  background: radial-gradient(ellipse at top, #514126, #191919 55%, #090909);
+}
+.hero small { color: var(--gold); letter-spacing: 3px; }
+.hero h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.6; }
+.hero p { color: #ccc; line-height: 2; }
+.btn {
+  display: inline-block;
+  border: 0;
+  border-radius: 4px;
+  background: var(--gold);
+  color: #111;
+  padding: 12px 20px;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn:hover { background: #f0d494; }
+.section { padding: 48px 7%; }
+.heading { text-align: center; margin-bottom: 28px; }
+.heading p { font-size: 13px; color: #aaa; line-height: 2; }
+.search {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto 25px;
+  padding: 13px;
+  background: #191919;
+  color: white;
+  border: 1px solid #514126;
+  border-radius: 5px;
+  font-family: inherit;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid #332b1d;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.art {
+  height: 200px;
+  background: linear-gradient(145deg, #383022, #191919);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.art img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.emoji { font-size: 65px; }
+.info { padding: 16px; }
+.info h3 { font-size: 15px; }
+.info p { font-size: 12px; color: #bbb; line-height: 1.9; }
+.price { color: var(--gold) !important; }
+.info .btn { width: 100%; font-size: 12px; }
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.benefit {
+  text-align: center;
+  padding: 20px 12px;
+  background: #171717;
+  border: 1px solid #332b1d;
+}
+.benefit h3 { color: var(--gold); font-size: 15px; }
+.benefit p { font-size: 12px; color: #bbb; line-height: 1.9; }
+.banner {
+  text-align: center;
+  padding: 45px 20px;
+  background: linear-gradient(120deg, #332819, #171717);
+}
+.banner h2 { color: var(--gold); }
+.banner p { color: #ccc; line-height: 2; }
+.about, .contact { text-align: center; padding: 40px 20px; line-height: 2; }
+.about p, .contact p { color: #bbb; }
+.contact { background: #171717; }
+.contact h2 { color: var(--gold); }
+.rubika-btn { background: #38a8e8; color: white; margin: 10px; }
+.rubika-btn:hover { background: #238bc7; }
+footer {
+  text-align: center;
+  background: #070707;
+  color: #999;
+  padding: 22px 12px;
+  font-size: 12px;
+  line-height: 2;
+}
+[hidden] { display: none !important; }
+@media(max-width:800px) {
+  .products { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .benefits { grid-template-columns: 1fr; }
+}
+@media(max-width:480px) {
+  header { justify-content: center; }
+  nav { justify-content: center; gap: 13px; }
+  .section { padding: 35px 5%; }
+  .products { gap: 10px; }
+  .art { height: 150px; }
+  .info { padding: 11px; }
+  .hero { padding: 55px 15px; }
+}
 </style>
 </head>
+
 <body>
 <header>
   <a class="logo" href="#home">STYLE MAN</a>
@@ -75,9 +168,18 @@ footer{text-align:center;background:#070707;color:#999;padding:22px 12px;font-si
 
 <section class="section">
   <div class="benefits">
-    <div class="benefit"><h3>✦ استایل متفاوت</h3><p>انتخاب‌هایی برای سلیقه‌های مختلف</p></div>
-    <div class="benefit"><h3>✦ معرفی محصولات</h3><p>مشخصات و قیمت با اطلاعات واقعی فروشگاه تکمیل می‌شود</p></div>
-    <div class="benefit"><h3>✦ ارتباط با فروشگاه</h3><p>راه سفارش پس از تکمیل اطلاعات اضافه خواهد شد</p></div>
+    <div class="benefit">
+      <h3>✦ استایل متفاوت</h3>
+      <p>انتخاب‌هایی برای سلیقه‌های مختلف</p>
+    </div>
+    <div class="benefit">
+      <h3>✦ معرفی محصولات</h3>
+      <p>مشخصات و قیمت محصولات را مشاهده کن.</p>
+    </div>
+    <div class="benefit">
+      <h3>✦ ارتباط با فروشگاه</h3>
+      <p>برای پرسش درباره محصولات با ما ارتباط بگیر.</p>
+    </div>
   </div>
 </section>
 
@@ -86,12 +188,16 @@ footer{text-align:center;background:#070707;color:#999;padding:22px 12px;font-si
     <h2>کالکشن مردانه</h2>
     <p>محصول مورد علاقه‌ات را پیدا کن</p>
   </div>
-  <input class="search" id="search" type="search" placeholder="جست‌وجوی محصول..." aria-label="جست‌وجوی محصول">
-  <div class="products" id="productGrid">
 
+  <input class="search" id="search" type="search"
+    placeholder="جست‌وجوی محصول..."
+    aria-label="جست‌وجوی محصول">
+
+  <div class="products" id="productGrid">
     <article class="card" data-name="تیشرت مردانه">
       <div class="art">
-        <img src="tshirt.jpg" alt="تیشرت مردانه" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <img src="tshirt.jpg" alt="تیشرت مردانه"
+          onerror="this.hidden=true;this.nextElementSibling.hidden=false">
         <span class="emoji" hidden>👕</span>
       </div>
       <div class="info">
@@ -131,9 +237,11 @@ footer{text-align:center;background:#070707;color:#999;padding:22px 12px;font-si
         <button class="btn order" data-name="کفش مردانه">جزئیات محصول</button>
       </div>
     </article>
-
   </div>
-  <p id="empty" hidden style="text-align:center;color:#bbb">محصولی پیدا نشد.</p>
+
+  <p id="empty" hidden style="text-align:center;color:#bbb">
+    محصولی پیدا نشد.
+  </p>
 </section>
 
 <section class="banner">
@@ -144,18 +252,24 @@ footer{text-align:center;background:#070707;color:#999;padding:22px 12px;font-si
 
 <section class="about" id="about">
   <h2>درباره استایل من</h2>
-  <p>این سایت نمونه اولیه یک فروشگاه لباس مردانه است. اطلاعات واقعی برند و محصولات بعداً جایگزین متن‌های نمونه می‌شوند.</p>
+  <p>این سایت نمونه اولیه یک فروشگاه لباس مردانه است.</p>
 </section>
 
 <section class="contact" id="contact">
   <h2>در ارتباط باشیم</h2>
-  <p>شماره تماس و روش سفارش پس از مشخص‌شدن فروشگاه اضافه می‌شود.</p>
+  <p>برای ارتباط و پرسش درباره محصولات، از طریق روبیکا پیام بده.</p>
+  <a class="btn rubika-btn"
+     href="https://rubika.ir/Jafar_g17"
+     target="_blank" rel="noopener noreferrer">
+    ارتباط با ما در روبیکا
+  </a>
+  <p>آیدی روبیکا: @Jafar_g17</p>
 </section>
 </main>
 
 <footer>
   <div>STYLE MAN | فروشگاه لباس مردانه</div>
-  <div>نمونه اولیه طراحی سایت</div>
+  <div>نمونه‌کار طراحی سایت</div>
 </footer>
 
 <script>
@@ -166,11 +280,13 @@ const empty = document.getElementById('empty');
 search.addEventListener('input', function () {
   const query = search.value.trim().toLowerCase();
   let visible = 0;
+
   cards.forEach(function (card) {
     const match = card.dataset.name.toLowerCase().includes(query);
     card.hidden = !match;
     if (match) visible++;
   });
+
   empty.hidden = visible !== 0;
 });
 
